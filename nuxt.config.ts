@@ -1,6 +1,12 @@
+import path from 'node:path';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { fileURLToPath } from 'node:url';
 export default defineNuxtConfig({
+  nitro: {
+    output: {
+      publicDir: path.join(__dirname, 'docs')
+    }
+  },
   alias: {
     //配置别名
     images: fileURLToPath(new URL("./assets/img", import.meta.url)),
@@ -27,7 +33,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  ssr:false,
+  ssr: false,
   // 导入scss、
   vite: {
     css: {
