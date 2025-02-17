@@ -1,0 +1,8 @@
+@import './init.scss';
+@import './theme.scss';
+@import './common.scss';
+@import './transitions.scss';
+
+#nprogress .bar {
+    background: #409eff !important; //自定义颜色
+}

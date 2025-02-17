@@ -1,0 +1,299 @@
+/* 页面内容 */
+.page-content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* label冒号 */
+.label-colon {
+    position: relative;
+    margin-right: 1.25rem;
+}
+
+.label-colon::after {
+    content: '：';
+    position: absolute;
+    top: .2188rem;
+}
+
+/* 多行溢出出现省略号 */
+.ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: var(--ellipsis-line, 3);
+}
+
+/* 单行溢出出现省略号 */
+.overflow-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 字体大小 */
+.text-xs {
+    font-size: 0.75rem;
+    /* 12px */
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    /* 14px */
+}
+
+.text-base {
+    font-size: 1rem;
+    /* 16px */
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    /* 18px */
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    /* 20px */
+}
+
+/*************************  font-weight  *************************/
+.font-thin {
+    font-weight: 100;
+}
+
+.font-extralight {
+    font-weight: 200;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-extrabold {
+    font-weight: 800;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+/******** flex => align-items(X)justify-content(Y) 组合 ********/
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-center-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-center-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-start-center {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flex-end-center {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.flex-clo {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center-clo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-start-clo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-end-clo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.flex-center-between-clo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center-start-clo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-center-end-clo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-start-center-clo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flex-end-center-clo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/************************* flex *************************/
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.flex-auto {
+    flex: 1 1 auto;
+}
+
+.flex-initial {
+    flex: 0 1 auto;
+}
+
+.flex-none {
+    flex: none;
+}
+
+/************************* flex-direction *************************/
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+/************************* flex-wrap *************************/
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+/************************* flex-grow *************************/
+.grow {
+    flex-grow: 1;
+}
+
+.grow-0 {
+    flex-grow: 0;
+}
+
+/************************* flex-shrink *************************/
+.shrink {
+    flex-shrink: 1;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+}
+
+
+/************************* a标签链接样式 *************************/
+.link_field {
+    color: #3957eb;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.link_field:hover {
+    color: #3957eb;
+    font-style: italic;
+    text-decoration: underline;
+}

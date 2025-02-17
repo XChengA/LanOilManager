@@ -1,0 +1,79 @@
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+/* 离开动画 */
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+}
+
+
+/* 淡入淡出效果 */
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/* 滑动效果 */
+.slide-enter-active,
+.slide-leave-active {
+    transition: transform 0.5s ease;
+}
+
+.slide-enter {
+    transform: translateX(100%);
+}
+
+.slide-leave-to {
+    transform: translateX(-100%);
+}
+
+/* 缩放效果 */
+.zoom-enter-active,
+.zoom-leave-active {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.zoom-enter,
+.zoom-leave-to {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+/* 组合效果：淡入淡出 + 滑动 */
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-slide-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.fade-slide-leave-to {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/* 3D 翻转效果 */
+.flip-enter-active,
+.flip-leave-active {
+    transition: transform 0.7s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-enter {
+    transform: rotateY(90deg);
+}
+
+.flip-leave-to {
+    transform: rotateY(-90deg);
+}

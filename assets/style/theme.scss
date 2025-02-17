@@ -1,0 +1,41 @@
+:root {
+  --theme-color: #333;
+  // --theme-background: #eee;
+  overflow-x: hidden;
+}
+
+html{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.daytime {
+  --theme-color: #858B95;
+  // --theme-background: #FFFFFF;
+}
+
+/* 更改dark类名下变量的取值 */
+.dark {
+  --theme-color: #828282;
+  --theme-background: #050505;
+}
+
+/* 更改pink类名下变量的取值 */
+.pink {
+  --theme-color: #fff;
+  --theme-background: pink;
+}
+
+.box {
+  width: 100%;
+  min-height: 100vh;
+  transition: all .2s;
+  border: 1px solid #000;
+  /* 使用变量 */
+  color: var(--theme-color);
+  // background: var(--theme-background);
+  border: none;
+  overflow: hidden;
+  position: relative;
+}

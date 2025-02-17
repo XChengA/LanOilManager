@@ -1,0 +1,48 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": false,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "experimentalDecorators": false,
+    "skipLibCheck": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": false,
+    "forceConsistentCasingInFileNames": false,
+    "useDefineForClassFields": false,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "node"
+    ],
+    "paths": {
+      "@/*": [
+        "/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "page/**/*.ts",
+    "page/**/*.tsx",
+    "page/**/*.vue",
+    "tests/**/*.ts",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "components/**/*.vue",
+    "api/**/*.ts",
+    "utils/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "moduleResolution":"node",
+}

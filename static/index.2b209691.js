@@ -1,1 +1,0 @@
-import{x as e,c as _,o as t}from"./entry.ac7e0529.js";import{_ as o}from"./_plugin-vue_export-helper.c27b6911.js";const s={class:"container"},c={__name:"index",setup(n){return e({}),(a,r)=>(t(),_("div",s,"对不起，您搜索的内容暂未收录，我们会努力更新……"))}},d=o(c,[["__scopeId","data-v-9353915e"]]);export{d as default};
