@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   // 配置app seo
   app: {
     buildAssetsDir: 'nuxt_assets',
-    baseURL: '/', // 如果你的应用部署在子路径下，例如 '/subpath/'，需要修改这里
+    baseURL: '/LanOilManager/', // 如果你的应用部署在子路径下，例如 '/subpath/'，需要修改这里
     head: {
       charset: 'utf-16',
       viewport: 'initial-scale=1',
