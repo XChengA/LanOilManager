@@ -1,0 +1,1 @@
+import{Y as e,c as t,o}from"./BmVZmq9Z.js";import{_ as c}from"./DlAUqK2U.js";const s={class:"container"},a={__name:"index",setup(_){return e({}),(r,n)=>(o(),t("div",s,"对不起，您搜索的内容暂未收录，我们会努力更新……"))}},d=c(a,[["__scopeId","data-v-9353915e"]]);export{d as default};
