@@ -22,7 +22,8 @@ export default defineNuxtConfig({
   },
   // 配置app seo
   app: {
-    buildAssetsDir: "/static/",
+    // baseURL: '/nuxt-github-pages/',
+    buildAssetsDir: 'nuxt_assets',
     head: {
       charset: 'utf-16',
       viewport: 'initial-scale=1',
